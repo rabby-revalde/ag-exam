@@ -1,0 +1,7 @@
+.overlayHero {
+   background: rgb(255, 255, 255);
+   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 60%);
+}
+.heroBg {
+   background-image: url(../../../public/assets/heroBG.png);
+}
