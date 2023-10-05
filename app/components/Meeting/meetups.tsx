@@ -149,7 +149,7 @@ const Meeting = () => {
                   {loadMore?.items?.slice(0, loadMore?.visible).map((meet, idx) => (
                      <div
                         key={idx}
-                        className="h-[353px] rounded-md border-2 border-[#D2D2D2] xl:p-10 p-6 text-center relative"
+                        className="h-[353px] w-full sm:mx-0 mx-auto rounded-md border-2 border-[#D2D2D2] xl:p-10 p-6 text-center relative"
                      >
                         <div className="flex justify-center">
                            <Image className="mx-auto self-center" objectFit="contain" src={meet?.icon} alt={"meet"} />
