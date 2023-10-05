@@ -152,14 +152,7 @@ const Meeting = () => {
                         className="h-[353px] rounded-md border-2 border-[#D2D2D2] xl:p-10 p-6 text-center relative"
                      >
                         <div className="flex justify-center">
-                           <Image
-                              className="mx-auto self-center"
-                              // width={98}
-                              // height={30}
-                              objectFit="contain"
-                              src={meet?.icon}
-                              alt={"meet"}
-                           />
+                           <Image className="mx-auto self-center" objectFit="contain" src={meet?.icon} alt={"meet"} />
                         </div>
                         <h5 className="text-center font-semibold text-xl py-8">{meet?.title}</h5>
                         <div className="flex justify-center gap-6">
