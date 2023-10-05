@@ -37,3 +37,6 @@ body {
    background: linear-gradient(0deg, rgba(71, 152, 11, 1) 0%, rgba(223, 237, 90, 1) 100%);
    padding: 10px 20px;
 }
+.chip {
+   margin-bottom: 0 !important;
+}

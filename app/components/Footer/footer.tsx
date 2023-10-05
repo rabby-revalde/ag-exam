@@ -79,7 +79,7 @@ const Footer = () => {
                         </li>
                      </ul>
                   </div>
-                  <div className="lg:col-span-2 col-span-3 lg:mb-2 mb-10 lg:mx-auto lg:order-4 order-1">
+                  <div className="lg:col-span-2 col-span-3 lg:mb-2 mb-10 lg:mx-auto md:mx-0 mx-auto lg:order-4 order-1">
                      <div className="block mb-10">
                         <Link className="relative block" href="/">
                            <Image

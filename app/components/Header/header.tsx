@@ -1,18 +1,19 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Sticky from "react-sticky-el";
 import Image from "next/image";
 import logo from "@/assets/mainLogo.png";
 
 const Header = () => {
-   const [menu, setMenu] = React.useState(false);
+   const [menu, setMenu] = useState(false);
    const showMenu = () => {
       setMenu((prevState) => !prevState);
    };
+
    return (
       <section className="block w-full">
-         <Sticky topOffset={80} stickyClassName="sticky-nav z-50 shadow-md">
+         <Sticky stickyClassName="sticky-nav z-50 shadow-md">
             <nav className="relative py-6 nav-wrap bg-white">
                <div className="container mx-auto flex relative">
                   <Link className="relative" href="/">
@@ -121,6 +122,11 @@ const Header = () => {
                </div>
                <div>
                   <ul>
+                     <li className="flex justify-center mb-10">
+                        <Link className="relative" href="/">
+                           <Image height={97} width={82} objectFit="contain" src={logo} alt="navigation-logo" />
+                        </Link>
+                     </li>
                      <li className="mb-1">
                         <Link
                            className="block p-4 text-base font-normal hover:font-bold font-heading relative"
@@ -129,9 +135,55 @@ const Header = () => {
                            Home
                         </Link>
                      </li>
+                     <li className="mb-1">
+                        <Link
+                           className="block p-4 text-base font-normal hover:font-bold font-heading relative"
+                           href="/"
+                        >
+                           Why NLX?
+                        </Link>
+                     </li>
+                     <li className="mb-1">
+                        <Link
+                           className="block p-4 text-base font-normal hover:font-bold font-heading relative"
+                           href="/"
+                        >
+                           News
+                        </Link>
+                     </li>
+                     <li className="mb-1">
+                        <Link
+                           className="block p-4 text-base font-normal hover:font-bold font-heading relative"
+                           href="/"
+                        >
+                           Events
+                        </Link>
+                     </li>
+                     <li className="mb-1">
+                        <Link
+                           className="block p-4 text-base font-normal hover:font-bold font-heading relative"
+                           href="/"
+                        >
+                           Login
+                        </Link>
+                     </li>
                   </ul>
                </div>
                <div className="mt-auto">
+                  <div className="flex mx-auto justify-center">
+                     <Link
+                        className="text-base font-normal relative gradient-blue-btn rounded-tl-lg rounded-bl-lg text-white"
+                        href="/"
+                     >
+                        Find A Group
+                     </Link>
+                     <Link
+                        className="text-base font-normal relative gradient-green-btn rounded-tr-lg rounded-br-lg"
+                        href="/"
+                     >
+                        Start A Group
+                     </Link>
+                  </div>
                   <p className="my-4 text-center text-xs">
                      <span>{`Copyright © ${new Date().getFullYear()} Lorem Ipsum. All rights reserved. | AGDP IT Solutions`}</span>
                   </p>
